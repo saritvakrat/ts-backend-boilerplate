@@ -22,7 +22,7 @@ $ npm install
 # development
 $ npm run start
 
-# watch mode
+# watch mode - using nodemon
 $ npm run start:dev
 
 # production mode
@@ -48,3 +48,13 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## API Swagger documentation
+```
+npm run start
+```
+URL: http://localhost:3000/api 
+
+ To generate and download a Swagger JSON file, navigate to http://localhost:3000/api-json in your browser (assuming that your Swagger documentation is available under http://localhost:3000/api). 
+
+More info: https://docs.nestjs.com/recipes/swagger#openapi-swagger
