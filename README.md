@@ -31,6 +31,7 @@ $ npm run start:prod
 
 ## Dockerize app
 to build the docker image run: docker build -t nest-docker .
+** cd /deployments
 
     * the -t or a.k.a tag command to give our image a specific name tag. You can confirm your image by running the docker images command
     * to run the create images: docker run -p 3000:3000 nest-docker
