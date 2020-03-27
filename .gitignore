@@ -34,3 +34,7 @@ lerna-debug.log*
 !.vscode/extensions.json
 
 .env
+
+# stryker temp files
+.stryker-tmp
+reports/

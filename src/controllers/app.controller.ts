@@ -7,8 +7,14 @@ export class AppController {
     private logger = new Logger(`AppController`);
 
     @Get()
-    getHello(): string {
+    public getHello(): string {
         this.logger.verbose(`User got an amazing Hello world!`);
         return this.appService.getHello();
+    }
+
+    @Get('/users')
+    public mockUsers(): object[] {
+        this.logger.verbose(`Users list appears ${JSON.stringify(this.appService.mockUsers())}`);
+        return this.appService.mockUsers();
     }
 }

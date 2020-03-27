@@ -19,7 +19,8 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "test:unit": "jest test/unit/**/*.test.ts",
-    "test:spec": "jest test/integration/**/*.spec.ts"
+    "test:spec": "jest test/integration/**/*.spec.ts",
+    "test:mutants": "npx stryker run"
   },
   "husky": {
     "hooks": {
@@ -62,6 +63,9 @@
     "@nestjs/cli": "^7.1.0",
     "@nestjs/schematics": "^7.0.0",
     "@nestjs/testing": "^7.0.6",
+    "@stryker-mutator/core": "^3.0.2",
+    "@stryker-mutator/jest-runner": "^3.0.2",
+    "@stryker-mutator/typescript": "^3.0.2",
     "@types/express": "^4.17.3",
     "@types/jest": "25.1.4",
     "@types/node": "^13.9.2",
@@ -77,6 +81,8 @@
     "jest": "^25.2.3",
     "nodemon": "^2.0.2",
     "prettier": "^2.0.2",
+    "stryker": "^0.35.1",
+    "stryker-cli": "^1.0.0",
     "supertest": "^4.0.2",
     "ts-jest": "25.2.1",
     "ts-loader": "^6.2.2",
