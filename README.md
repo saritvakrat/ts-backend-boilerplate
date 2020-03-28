@@ -48,6 +48,9 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+
+# test mutation
+$ npm run test:mutants
 ```
 
 ## API Swagger documentation
